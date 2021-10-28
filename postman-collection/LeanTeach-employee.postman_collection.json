@@ -11,12 +11,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/employee/api/Check",
+					"raw": "http://54.164.139.32/employee/api/Check",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"54",
+						"164",
+						"139",
+						"32"
 					],
-					"port": "8000",
 					"path": [
 						"employee",
 						"api",
@@ -44,12 +46,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/employee/api",
+					"raw": "http://54.164.139.32/employee/api",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"54",
+						"164",
+						"139",
+						"32"
 					],
-					"port": "8000",
 					"path": [
 						"employee",
 						"api"
@@ -64,12 +68,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/employee/api/byPosition",
+					"raw": "http://54.164.139.32/employee/api/byPosition",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"54",
+						"164",
+						"139",
+						"32"
 					],
-					"port": "8000",
 					"path": [
 						"employee",
 						"api",
@@ -85,12 +91,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/employee/api/1",
+					"raw": "http://54.164.139.32/employee/api/1",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"54",
+						"164",
+						"139",
+						"32"
 					],
-					"port": "8000",
 					"path": [
 						"employee",
 						"api",
@@ -107,7 +115,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"employee\": {\n        \"salary\": -10,\n        \"person\": {\n            \"name\": \"guillermo\",\n\t        \"lastNam2\": \"de mendoza\",\n\t        \"address\": \"va valle - col\",\n\t        \"cellphone\": \"300300300\",\n\t        \"cityName\": \"bogota\"\n        }\n    },\n    \"position\": {\n        \"name\": \"DEVELOPER\"\n    }\n}",
+					"raw": "{\n    \"employee\": {\n        \"salary\": 2000,\n        \"person\": {\n            \"name\": \"guillermo\",\n\t        \"lastNam2\": \"de mendoza\",\n\t        \"address\": \"va valle - col\",\n\t        \"cellphone\": \"300300300\",\n\t        \"cityName\": \"bogota\"\n        }\n    },\n    \"position\": {\n        \"name\": \"DEVELOPER\"\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -115,12 +123,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/employee/api/",
+					"raw": "http://54.164.139.32/employee/api/",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"54",
+						"164",
+						"139",
+						"32"
 					],
-					"port": "8000",
 					"path": [
 						"employee",
 						"api",
@@ -137,7 +147,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"employee\": {\n        \"id\": 2,\n        \"salary\": 6000,\n        \"person\": {\n            \"name\": \"sheriff\",\n\t        \"lastNam2\": \"dee mendoza\",\n\t        \"address\": \"va valle - col\",\n\t        \"cellphone\": \"300300100\",\n\t        \"cityName\": \"bogota\"\n        }\n    },\n    \"position\": {\n        \"name\": \"TESTER\"\n    }\n}",
+					"raw": "{\n    \"employee\": {\n        \"id\": 2,\n        \"salary\": 6000,\n        \"person\": {\n            \"name\": \"sheriff\",\n\t        \"lastNam2\": \"dee mendoza\",\n\t        \"address\": \"va valle - col\",\n\t        \"cellphone\": \"300300100\",\n\t        \"cityName\": \"bogota\"\n        }\n    },\n    \"position\": {\n        \"name\": \"DEVELOPER\"\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -145,12 +155,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/employee/api/",
+					"raw": "http://54.164.139.32/employee/api/",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"54",
+						"164",
+						"139",
+						"32"
 					],
-					"port": "8000",
 					"path": [
 						"employee",
 						"api",
