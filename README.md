@@ -4,6 +4,11 @@
 ### Framework: springboot
 ### IDE: spring tool suite
 
+Postman collection:
+
+	Link [PostManCollection](https://github.com/memoodm/LeanTech-test/tree/main/postman-collection).
+
+
 Positions values:
 
 	EMPTY(""),
