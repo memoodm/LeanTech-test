@@ -10,4 +10,5 @@ import co.com.leantech.employee.persistence.entity.Position;
 
 public interface EmployeeRepository extends PagingAndSortingRepository<Employee, Long>{
 	List<Employee> findAllByPositionOrPersonNameIgnoreCase(Position position,String person,Pageable pageable);
+	List<Employee> findAllByPositionOrderBySalaryDesc(Position position);
 }

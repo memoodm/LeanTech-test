@@ -58,13 +58,12 @@ public class EmployeeServiceImpl implements EmployeeService{
 	@Override
 	@Transactional(readOnly = true)
 	public List<GetEmployeesByPositionResponse> getAllByPosition() {
-		List<Position> positions = (List<Position>) positionRepository.findAll();
+		List<Position> positions = (List<Position>) positionRepository.findAll();	
 		return positions.stream()
-				 .filter(e->!e.getEmployees().isEmpty())
-				 .map(e->GetEmployeesByPositionResolver.resolveList(e.getEmployees(), e))
-				 .peek(e->e.getEmployees().sort(Comparator.comparing(data -> data.getSalary())))
-				 .peek(e->Collections.reverse(e.getEmployees()))
-				 .collect(Collectors.toList());
+			.map(e->employeeRepository.findAllByPositionOrderBySalaryDesc(e))
+			.filter(e->!e.isEmpty())
+			.map(e->GetEmployeesByPositionResolver.resolveList(e, e.get(0).getPosition()))
+			.collect(Collectors.toList());
 	}
 
 	@Override
